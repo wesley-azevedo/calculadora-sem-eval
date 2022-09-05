@@ -49,6 +49,16 @@
     color: white;
     margin: 3px;
 }
+.botaoLimpar{
+    background-color: #6b0810;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    margin: 3px;
+}
 .botaoNumero:hover{
     background-color: #a8a8a8;
 }
@@ -58,13 +68,15 @@
 .botaoIgual:hover{
     background-color: #118fa0;
 }
-#resultado{
+.botaoLimpar:hover{
+    background-color: #8d0813;
+}
+#display{
     background-color: white;
-    width: 207px;
-    height: 30px;
-    margin: 5px;
-    font-size: 25px;
-    color: black;
+    display: inline-table;
+    margin: 7px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
     text-align: right;
-    padding: 5px;
+    padding: 10px;
 }

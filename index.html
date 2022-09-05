@@ -8,37 +8,42 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="calculadora">
-      <br/>
-      display:<span id="display"></span>
-      <br/>
-      <table>
-        <tr>
-          <td><input type="button" class="botaoOperacao" value="C" onclick="limparDisplay()"/></td>
-          <td><input type="button" class="botaoOperacao" value="/" onclick="calculadoraVisor('/')"/></td>
-          <td><input type="button" class="botaoOperacao" value="*" onclick="calculadoraVisor('*')"/></td>
+    <div class="fundo">
+      <div class="calculadora">
+        <div class="resultado">
+          <span style="width: 194px; height: 40px;" id="display"></span>
+        </div>
+        <table>
+          <tr>
+            <td colspan="2"><input type="button" class="botaoLimpar" style="width: 106px;" value="C" onclick="limparDisplay()"/></td>
+            <td><input type="button" class="botaoOperacao" value="&divide" onclick="calculadoraVisor('/')"/></td>
+            <td><input type="button" class="botaoOperacao" value="&times" onclick="calculadoraVisor('*')"/></td>
+          </tr>
+          <tr>
+            <td><input type="button" class="botaoNumero" value="7" onclick="calculadoraVisor(7)"/></td>
+            <td><input type="button" class="botaoNumero" value="8" onclick="calculadoraVisor(8)"/></td>
+            <td><input type="button" class="botaoNumero" value="9" onclick="calculadoraVisor(9)"/></td>
+            <td><input type="button" class="botaoOperacao" value="-" onclick="calculadoraVisor('-')"/></td>
+          </tr>
+          <tr>
+            <td><input type="button" class="botaoNumero" value="4" onclick="calculadoraVisor(4)"/></td>
+            <td><input type="button" class="botaoNumero" value="5" onclick="calculadoraVisor(5)"/></td>
+            <td><input type="button" class="botaoNumero" value="6" onclick="calculadoraVisor(6)"/></td>
+            <td><input type="button" class="botaoOperacao" value="+" onclick="calculadoraVisor('+')"/></td>
+          </tr>
+          <tr>
+            <td><input type="button" class="botaoNumero" value="1" onclick="calculadoraVisor(1)"/></td>
+            <td><input type="button" class="botaoNumero" value="2" onclick="calculadoraVisor(2)"/></td>
+            <td><input type="button" class="botaoNumero" value="3" onclick="calculadoraVisor(3)"/></td>
+            <td rowspan="2"><input type="button" class="botaoIgual" style="height: 106px" value="=" onclick="calculadoraVisor('=')"/></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="button" class="botaoNumero" style="width: 106px;" value="0" onclick="calculadoraVisor(0)"/></td>
+            <td><input type="button" class="botaoNumero" value="," onclick="calculadoraVisor(',')"/></td>
         </tr>
-        <tr>
-          <td><input type="button" class="botaoNumero" value="7" onclick="calculadoraVisor(7)"/></td>
-          <td><input type="button" class="botaoNumero" value="8" onclick="calculadoraVisor(8)"/></td>
-          <td><input type="button" class="botaoNumero" value="9" onclick="calculadoraVisor(9)"/></td>
-          <td><input type="button" class="botaoOperacao" value="-" onclick="calculadoraVisor('-')"/></td>
-        </tr>
-        <tr>
-          <td><input type="button" class="botaoNumero" value="4" onclick="calculadoraVisor(4)"/></td>
-          <td><input type="button" class="botaoNumero" value="5" onclick="calculadoraVisor(5)"/></td>
-          <td><input type="button" class="botaoNumero" value="6" onclick="calculadoraVisor(6)"/></td>
-          <td><input type="button" class="botaoOperacao" value="+" onclick="calculadoraVisor('+')"/></td>
-        </tr>
-        <tr>
-          <td><input type="button" class="botaoNumero" value="1" onclick="calculadoraVisor(1)"/></td>
-          <td><input type="button" class="botaoNumero" value="2" onclick="calculadoraVisor(2)"/></td>
-          <td><input type="button" class="botaoNumero" value="3" onclick="calculadoraVisor(3)"/></td>
-          <td><input type="button" class="botaoOperacao" value="=" onclick="calculadoraVisor('=')"/></td>
-        </tr>
-      </table>
+        </table>
+      </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

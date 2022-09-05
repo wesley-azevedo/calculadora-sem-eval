@@ -77,6 +77,13 @@ Daí, segue os passos abaixo:*/
 function limparDisplay(){
   display = "";
   parcela = 0;
-  operacao = "-";
+  operacao = "";
   document.getElementById("display").textContent = display;
+}
+
+/*Estou com problemas quando a operação é realizada. Após isso, sempre quando se clica em número ele é somado.
+Pensei na function abaixo para resolver, mas não estou conseguindo aplicar. Vou ver mais amanhã, pq preciso dormir. :)*/
+function resetar(){
+  parcela = 0;
+  operacao = "";
 }
