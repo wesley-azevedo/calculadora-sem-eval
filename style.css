@@ -3,7 +3,7 @@
     padding: 0;
 }
 .fundo{
-    background-image: linear-gradient(45deg, #FF0080, #9e0052);
+    background-color: black;
     height: 100vh;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,14 +11,12 @@
 }
 .calculadora{
     position: absolute;
-    background-color: aliceblue;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgb(27, 27, 27);
     top: 50%;
     left: 50%;
     color: black;
     transform: translate(-50%,-35%);
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 15px;
     padding: 15px;
 }
 .logodigitalcollege {
@@ -28,8 +26,8 @@
     padding: 20px;
     width: 200px;
 }
-.botao{
-    background-color: #2E0249;
+.botaoNumero{
+    background-color: #050505;
     width: 50px;
     height: 50px;
     font-size: 25px;
@@ -38,8 +36,34 @@
     color: white;
     margin: 3px;
 }
-.botao:hover{
-    background-color: #160124;
+.botaoOperacao{
+    background-color: #242424;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    margin: 3px;
+}
+.botaoIgual{
+    background-color: #0d6f7c;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    margin: 3px;
+}
+.botaoNumero:hover{
+    background-color: #a8a8a8;
+}
+.botaoOperacao:hover{
+    background-color: #a8a8a8;
+}
+.botaoIgual:hover{
+    background-color: #118fa0;
 }
 #resultado{
     background-color: white;
