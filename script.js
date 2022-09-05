@@ -1,22 +1,56 @@
-function insert(num)
-{
-    var numero = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = numero + num;
-}
-function clean()
-{
-    document.getElementById('resultado').innerHTML = "";
-}
-function back()
-{
-    var resultado = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1)
-}
-function calcular()
-{
-    var resultado = document.getElementById('resultado').innerHTML;
-    if(resultado)
-    {
-        document.getElementById('resultado').innerHTML = eval(resultado);  
+let visor = "";
+let parcela = 0;
+let operacao = "";
+
+//Função para números
+function calcular(param) {
+    if (typeof param === "number") {
+        visor = visor + param;
     }
+
+//Função para operações
+    if (typeof param === "string") {
+        if (param === "-") {
+            parcela = parseInt(visor);
+            visor = "";
+            operacao = "-";
+        }
+        if (param === "+") {
+            parcela = parseInt(visor);
+            visor = "";
+            operacao = "+";
+        }
+        if (param === "*") {
+            parcela = parseInt(visor);
+            visor = "";
+            operacao = "*";
+        }
+        if (param === "/") {
+            parcela = parseInt(visor);
+            visor = "";
+            operacao = "/";
+        }
+
+        //Operação do resultado
+        if (param === "=") {
+            if (operacao === "+") {
+                visor = parcela + parseInt(visor);
+                operacao = "";
+            }
+            if (operacao === "-") {
+                visor = parcela - parseInt(visor);
+                operacao = "";
+            }
+            if (operacao === "*") {
+                visor = parcela * parseInt(visor);
+                operacao = "";
+            }
+            if (operacao === "/") {
+                visor = parcela / parseInt(visor);
+                operacao = "";
+            }
+        }
+    }
+
+    document.getElementById("display").textContent = display;
 }
