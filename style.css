@@ -40,7 +40,7 @@
     margin: 3px;
 }
 .botaoIgual{
-    background-color: #0d6f7c;
+    background-color: #01a88c;
     width: 50px;
     height: 50px;
     font-size: 25px;
@@ -66,7 +66,7 @@
     background-color: #a8a8a8;
 }
 .botaoIgual:hover{
-    background-color: #118fa0;
+    background-color: #01dfc1;
 }
 .botaoLimpar:hover{
     background-color: #8d0813;
