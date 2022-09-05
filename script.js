@@ -18,24 +18,28 @@ Daí, segue os passos abaixo:*/
 //Passo 1 - A variável "parcela" recebe a variável "visor" em formato de número inteiro;
 //Passo 2 - A variável "visor" recebe o valor vazio para que seja declarada a segunda parcela da operação;
 //Passo 3 - A variável "operacao" recebe o sinal matemático para que possa ser utilizado na condição "=".
+//Observação: caso seja uma ".", só acrescenta no display.
   if (typeof param === "string") {
+    if (param === ".") {
+      display = display + ".";
+    }
     if (param === "-") {
-      parcela = parseInt(display);
+      parcela = parseFloat(display);
       display = "";
       operacao = "-";
     }
     if (param === "+") {
-      parcela = parseInt(display);
+      parcela = parseFloat(display);
       display = "";
       operacao = "+";
     }
     if (param === "/") {
-      parcela = parseInt(display);
+      parcela = parseFloat(display);
       display = "";
       operacao = "/";
     }
     if (param === "*") {
-      parcela = parseInt(display);
+      parcela = parseFloat(display);
       display = "";
       operacao = "*";
     }
@@ -47,22 +51,22 @@ Daí, segue os passos abaixo:*/
     //Passo 4 - A variável "parcela" recebe o valor "0".
     if (param === "=") {
       if (operacao === "+") {
-        display = parcela + parseInt(display);
+        display = parcela + parseFloat(display);
         operacao = "";
         parcela = 0;
       }
       if (operacao === "-") {
-        display = parcela - parseInt(display);
+        display = parcela - parseFloat(display);
         operacao = "";
         parcela = 0;
       }
       if (operacao === "/") {
-        display = parcela / parseInt(display);
+        display = parcela / parseFloat(display);
         operacao = "";
         parcela = 0;
       }
       if (operacao === "*") {
-        display = parcela * parseInt(display);
+        display = parcela * parseFloat(display);
         operacao = "";
         parcela = 0;
       }
