@@ -86,8 +86,8 @@ function limparDisplay(){
 }
 
 /*Estou com problemas quando a operação é realizada. Após isso, sempre quando se clica em número ele é somado.
-Pensei na function abaixo para resolver, mas não estou conseguindo aplicar. Vou ver mais amanhã, pq preciso dormir. :)*/
+Pensei na function abaixo para resolver, mas não estou conseguindo aplicar. Vou ver mais amanhã, pq preciso dormir. :)
 function resetar(){
   parcela = 0;
   operacao = "";
-}
+}*/
